@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GUESSING GAME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Your link to your CSS file -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Your Javascript file goes here -->
+  <script src="app.js" async defer></script>
+</head>
+
+<body>
+  <!-- your HTML should go here -->
+  <nav>
+    <h1>Let's Play the Guessing Number Game!</h1>
+  </nav>
+
+  <p>Guess a number between
+    <span id="minGuess"></span> and
+    <span id="maxGuess"></span> .
+  </p>
+
+  <input id="userGuessInput" type="number" placeholder="type your guess here">
+  <button onClick="submitGuess()">submit</button>
+  <button onClick="restartGame()">restart</button>
+
+  <p id="debugMessage"></p>
+
+  <p id="computerResponse"></p>
+
+  <div>
+    <p>Your previous guesses</p>
+    <div id="userGuesses"></div>
+  </div>
+  
+</body>
+
+</html>
